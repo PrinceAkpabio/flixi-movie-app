@@ -1,0 +1,32 @@
+.landing-page{
+ display: flex;
+ flex-flow: column;
+
+ .landing-nav{
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 35px ;
+  
+
+
+  #nav-image{
+    object-fit: contain;
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  #nav-link{
+   background-color: red;
+   padding: 4px 9px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: 500;
+   color: rgb(255, 254, 254);
+   border-radius: 5px;
+  }
+ }
+}
