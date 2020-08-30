@@ -10,6 +10,7 @@ import {
 } from "../src/firebase/firebase.utilis";
 import SignUpPage from "./pages/sign-up-page/sign-up-page.component";
 import SignInPage from "./pages/sign-in-page/sign-in.component";
+import HomePage from "./pages/home-page/home-page.component";
 
 
 class App extends React.Component {
@@ -52,6 +53,7 @@ class App extends React.Component {
         <Route exact path="/landing" component={LandingPage} />
         <Route exact path="/signup" component={SignUpPage} />
         <Route exact path="/signin" component={SignInPage} />
+        <Route exact path="/home" component={HomePage} />
       </div>
     );
   }
