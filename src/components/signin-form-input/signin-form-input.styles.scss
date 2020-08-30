@@ -1,0 +1,44 @@
+@import '../../../node_modules/rfs/scss';
+
+
+.input-group {
+    // border: 1px solid red;
+    @include margin-top(1rem);
+
+
+    .input-box {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        @include padding(.75rem 1.35rem);
+        background-color: #333;
+        @include rfs(.2rem, border-radius);
+        border: transparent;
+        color: white;
+        // @include font-size(.9rem);
+
+        &:focus {
+            outline: none;
+        }
+
+        // &:focus ~ .input-label {
+        //     @include font-size(.5rem);
+        //     @include rfs(5.5rem, left);
+        //     @include rfs(.1rem, top);
+        // }
+    }
+
+    
+
+    // .input-label {
+    //     position: absolute;
+    //     color: rgb(140, 140, 140);
+    //     // @include rfs(5.5rem, left);
+    //     // @include rfs(.6rem, top);
+    //     @include font-size(1.1rem);
+    //     pointer-events: none;
+    //     transition: 300ms ease all;
+    // }
+}
+
+

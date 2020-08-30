@@ -1,0 +1,163 @@
+//@import "../node_modules/rfs/scss";
+
+//.title {
+  //@include font-size(4rem);
+
+  // The font-size mixin is a shorthand which calls
+  // @include rfs(4rem, font-size);
+
+  // Other shorthand mixins that are available are:
+  // @include padding(4rem);
+  // @include padding-top(4rem);
+  // @include padding-right(4rem);
+  // @include padding-bottom(4rem);
+  // @include padding-left(4rem);
+  
+  // For properties which do not have a shorthand, the property can be passed:
+  // @include rfs(4rem, border-radius);
+
+  // Whenever a value contains a comma, it should be escaped with `#{}`:
+  // @include rfs(0 0 4rem red #{","} 0 0 5rem blue, box-shadow);
+
+  // Custom properties (css variables):
+  // @include rfs(4rem, --border-radius);
+//}
+
+@import "../../../node_modules/rfs/scss";
+
+.sign-in-container {
+    height: 100vh;
+    width: 100vw;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    background-image: url(../../Assets/sign-in-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include padding-top(1.5rem);
+    @include padding-left(3rem);
+    @include padding-right(3rem);
+
+    .container-overlay {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0,0,0,1);
+            opacity: .6;  
+    }
+
+    .home-link {
+        position: relative;
+        z-index: 2;
+    }
+
+    .sign-in-form {
+        width: 450px;
+        height: auto;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        @include padding-top(2rem);
+        @include padding-bottom(2rem);
+        @include margin-top(2rem);
+
+        // @media(max-width:550px) {
+        //     .sign-in-form {
+        //         width: 300px;
+        //         // display: none !important;
+        //     }
+        // }
+
+        @media only screen and (max-width: 550px) {
+            // background: white;
+            width: 300px;
+        }
+
+        @media only screen and (max-width: 550px) {
+            // background: white;
+            width: 260px;
+        }
+
+        .form-overlay {
+            content: " ";
+            display: block;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, .7);
+            @include rfs(.2rem, border-radius);
+            z-index: 1;
+        }
+
+        .form-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            z-index: 2;
+            
+
+
+            .form-title {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                color: white;
+                @include margin-bottom(1.5rem);
+            }
+
+            .remember-div {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                @include margin-top(.3rem);
+
+                .remember-label {
+                    @include margin-left(.2rem);
+                    color: rgb(140, 140, 140);
+                }
+            }
+
+            .fb-btn-div {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                @include margin-top(2rem);
+
+                .fb-btn {
+                    background: transparent;
+                    color: rgb(140, 140, 140);
+                    border: transparent;
+
+                    .fa-google {
+                        // color: #3B579D;
+                        @include margin-right(.5rem);
+                    }
+                }
+            }
+
+            .sign-up-text {
+                color: rgb(140, 140, 140);
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                @include margin-top(.7rem);
+
+                .sign-up {
+                    color: white;
+
+                    .sign-up-link {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
