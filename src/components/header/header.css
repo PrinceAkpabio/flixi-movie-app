@@ -1,0 +1,168 @@
+
+.header-wrapper{
+    padding: 1.75em 3.5em;
+    background-color: transparent;
+}
+.navbar{
+    background-color: transparent;
+    padding: 0%;
+    margin: 0px;
+}
+.navbar-brand{
+    width: 12.5%;
+    padding: 0em;
+    margin: 0%;
+}
+.navbar-brand img{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+.navbar-nav{
+    padding-left: 2em;
+}
+.navbar-toggler .fa-bars{
+    color: white;
+}
+.navbar-nav .nav-link{
+    color: white;
+    font-size: 1.1em;
+}
+.navbar-nav .nav-link:hover{
+    color: white;
+    font-weight: bold;
+    font-size: 1.15em;
+}
+.auth-span{
+    padding: 0em 0em 0em 0em;
+    margin: 0%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    font-size: 1.1em;
+}
+.auth-span i{
+    padding: 0.5em;
+}
+.auth-span .account-type{
+    padding: 0.5em 1em 0.5em 0.5em;
+}
+.auth-span .nav-item{
+    background-color: red;
+    border: none;   
+    color: white;
+    width: auto;
+    padding: 0.25em 1em;
+    font-weight: bold;
+    font-size: 1em;
+}
+.auth-span .btn:hover{
+    text-decoration-style: none;
+}
+
+@media (max-width:575px){
+
+    /* Header Section */
+    .header-wrapper{
+        padding: 1.5em 2em 1.5em 2em;
+    }
+    .navbar{
+        padding: 0%;
+    }
+    .navbar-brand{
+        width: 50%;
+    }
+    .navbar-brand img{
+        width: 55%;
+    }
+    .auth-span{
+        justify-content: center;
+        padding: 0em 0em 0em 0em;
+        margin: 0%;
+    }
+    .auth-span .nav-item{
+        padding: 0.25em 0.75em;
+        font-size: 1em;
+        font-weight: bold;
+        margin: 0%;
+    }
+    .auth-span .btn:hover{
+        text-decoration-style: none;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px){
+
+    /* Header Section */
+    .header-wrapper{
+        padding: 1.5em 2.5em 1.5em 2.5em;
+    }
+    .navbar{
+        padding: 0%;
+    }
+    .navbar-brand{
+        width: 50%;
+    }
+    .navbar-brand img{
+        width: 40%;
+    }
+    .auth-span{
+        justify-content: center;
+        padding: 0em 0em 0em 0em;
+        margin: 0%;
+    }
+    .auth-span .nav-item{
+        padding: 0.25em 0.75em;
+        font-size: 1em;
+        font-weight: bold;
+        margin: 0%;
+    }
+    .auth-span .btn:hover{
+        text-decoration-style: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+    /* Header Section */
+    .header-wrapper{
+        padding: 1.5em 3em 1.5em 3em;
+    }
+    .navbar{
+        padding: 0%;
+    }
+    .navbar-brand{
+        width: 15%;
+    }
+    .navbar-nav {
+        padding-left: 0px;
+    }
+    .navbar-nav .nav-link{
+        color: white;
+        font-size: 0.75em;
+        
+    }
+    .navbar-nav .nav-link:hover{
+        color: white;
+        font-weight: bold;
+        font-size: 0.85em;
+    }
+    .navbar-brand img{
+        width: 100%;
+    }
+    .auth-span{
+        padding: 0em 0em 0em 0em;
+        margin: 0%;
+        font-size: 0.75em;
+    }
+    .auth-span .nav-item{
+        padding: 0.25em 0.75em;
+        font-size: 0.875em;
+        font-weight: bold;
+        margin: 0%;
+    }
+    .auth-span .btn:hover{
+        text-decoration-style: none;
+    }
+}

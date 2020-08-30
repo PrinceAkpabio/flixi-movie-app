@@ -3,7 +3,7 @@ import FormInput from '../../components/custom-input/custom-input.component';
 import CustomButton from '../../components/custom-button/custom-button.component';
 import { Link, withRouter } from 'react-router-dom';
 import { auth, createUserProfileDocument } from '../../firebase/firebase.utilis';
-// import Footer from '../../components/footer/footer';
+import Footer from '../../components/footer/footer';
 
 import './sign-up-page.styles.scss';
 
@@ -85,7 +85,7 @@ class SignUpPage extends React.Component {
 
     </div>
 
-    {/* <Footer /> */}
+    <Footer />
     
    </div>
   )
