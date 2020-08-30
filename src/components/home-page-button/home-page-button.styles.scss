@@ -1,0 +1,38 @@
+.home_page-button{
+  min-width: 210px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  padding: 0 20px 0 20px;
+  margin-right: 10px;
+  font-size: 15px;
+  background-color: rgba(128,128,128,0.6);
+  color: white;
+  font-family: cursive;
+  font-weight: lighter;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(248, 232, 232, 0.788);
+    color: black;
+    border: 1px solid black;
+    transition: all 0.2s;
+  }
+
+  &.banner-button{
+    background-color: hotpink;
+  }
+
+  &.section1-button{
+    background-color: whitesmoke;
+    color: black;
+
+    &:hover{
+     background-color: rgba(128,128,128,0.6);
+     color: white;
+    }
+  }
+
+}
