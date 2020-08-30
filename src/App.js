@@ -9,6 +9,7 @@ import {
   createUserProfileDocument,
 } from "../src/firebase/firebase.utilis";
 import SignUpPage from "./pages/sign-up-page/sign-up-page.component";
+import SignInPage from "./pages/sign-in-page/sign-in.component";
 
 
 class App extends React.Component {
@@ -50,6 +51,7 @@ class App extends React.Component {
       <div className="netflix-app container-fluid">
         <Route exact path="/landing" component={LandingPage} />
         <Route exact path="/signup" component={SignUpPage} />
+        <Route exact path="/signin" component={SignInPage} />
       </div>
     );
   }

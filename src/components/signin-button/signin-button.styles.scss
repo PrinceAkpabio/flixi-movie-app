@@ -1,0 +1,19 @@
+@import "../../../node_modules/rfs/scss";
+
+.button-container {
+    @include margin-top(1rem);
+
+
+    .signin-button {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        @include padding(.5rem);
+        @include margin-top(2rem);
+        background-color: rgb(229, 9, 20);
+        color: white;
+        @include rfs(.2rem, border-radius);
+        border: transparent;
+    }
+}
