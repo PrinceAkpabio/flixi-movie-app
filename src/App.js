@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import LandingPage from "./pages/landing-page/landing-page.component";
 
 import "./App.css";
@@ -54,6 +54,7 @@ class App extends React.Component {
         <Route exact path="/signup" component={SignUpPage} />
         <Route exact path="/signin" component={SignInPage} />
         <Route exact path="/home" component={HomePage} />
+        <Redirect from='/' to='/landing' />
       </div>
     );
   }
