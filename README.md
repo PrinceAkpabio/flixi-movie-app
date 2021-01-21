@@ -1,5 +1,5 @@
 # Project Description
-The project main goal is to display the results for the movie which the user searches for. The movie shows with the details page that the user can see it completely with different details about the film. No need to sign In/Sign Up for using the website.
+The project main goal is to display the results for movie trailers which the user searches for. Users need to sign In/Sign Up for using the website.
 
 # How to run the code
 1- Download the code-base.
