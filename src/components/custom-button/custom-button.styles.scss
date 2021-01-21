@@ -1,0 +1,22 @@
+.custom-button{
+  min-width: 95px;
+  width: auto;
+  height: 30px;
+  letter-spacing: 0.5px;
+  padding: 0 20px 0 20px;
+  margin-right: 10px;
+  font-size: 15px;
+  background-color: rgba(128,128,128,0.6);
+  color: white;
+  font-family: cursive;
+  font-weight: lighter;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(248, 232, 232, 0.788);
+    color: black;
+    border: 1px solid black;
+    transition: all 0.2s;
+  }
+}

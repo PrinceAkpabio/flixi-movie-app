@@ -1,0 +1,70 @@
+.section1{
+ background:  linear-gradient(to bottom, rgb(255, 1, 1), rgb(197, 85, 85), rgb(172, 40, 62));
+ width: 100%;
+ height: 130vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ 
+ color: whitesmoke;
+
+
+ &-contents{
+  position: relative;
+  top: 70px;
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+
+
+  .section-overview{
+   display: grid;
+   grid-gap: 20px;
+   margin: 15px 0;
+   color: grey;
+   text-align: justify;
+   width: 500px;
+  }
+
+  .section1-icons{
+   display: flex;
+   justify-self: center;
+   flex-wrap: wrap;
+   max-width: 500px;
+   width: 300px;
+   margin: 0 20px 40px 50px;
+
+   .icon-img{
+    object-fit: contain;
+    width: 70px;
+   }
+
+   .svg{
+    object-fit: contain;
+    width: 100px;
+    margin-right: 50px;
+
+    &:nth-child(1){
+     width: 130px;
+    }
+
+    &:nth-child(2){
+     width: 90px;
+    }
+   }
+  }
+
+  .section1-btn-wrapper{
+   width: 100%;
+  }
+ }
+
+ .section1-image{
+  background: url(../../../Assets//section-img.png) no-repeat center center/cover;
+  width: 100%;
+  height: 25%;
+ }
+}
