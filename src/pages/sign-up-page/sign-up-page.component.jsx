@@ -56,9 +56,15 @@ class SignUpPage extends React.Component {
 
   this.setState({[name]: value})
  }
-
+ 
  render() {
-  const {displayName, ...otherProps} = this.state;
+  const { displayName, ...otherProps } = this.state;
+  console.log(this.state);
+  console.log(displayName);
+  console.log(otherProps.email);
+  console.log(otherProps.password);
+
+
   return (
    <div className='sign-up-page'>
     <nav className='signup-nav'>
